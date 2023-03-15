@@ -1,11 +1,10 @@
 name: build
 on:
   push:
-   tags:
-     - 'v*
- # schedule:
+ 
+  schedule:
     #- cron: '0 * * * *' # hourly.
-  #  - cron: '0 0 17 * *' # every month, the 17th day.
+    - cron: '0 0 17 * *' # every month, the 17th day.
   watch:
     types: [started]
 jobs:
